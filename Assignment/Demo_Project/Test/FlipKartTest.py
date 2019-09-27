@@ -3,7 +3,8 @@ import unittest
 import time
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
-
+from Demo_Project.Pages import FlipKartHomePage
+from Demo_Project.Locators import FlipKartLocators
 
 class MyTestCase(unittest.TestCase):
     @classmethod
@@ -14,7 +15,10 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_flipkartScenario(self):
-        driver=self.driver
+        driver=self.driver()
+        homepage=FlipKartHomePage(driver)
+        homepage.
+
         driver.find_element_by_xpath("//span[text()='Enter Email/Mobile number']/ancestor::div/button").click()
         menu=driver.find_element_by_xpath("//span[contains(text(),'Electronics')]")
         ActionChains(driver).move_to_element(menu).perform()
