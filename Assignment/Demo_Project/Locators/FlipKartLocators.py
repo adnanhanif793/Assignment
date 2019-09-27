@@ -5,4 +5,4 @@ class FlipKartLocator:
     AddTOCart_Button_xpath="//text()[contains(.,'ADD TO CART')]/ancestor::button"
     AddQuantity_Button_xpath="//button[text()='+']"
     TotalAmount_Text_xpath="//div[contains(text(),'Total Payable')]/following-sibling::span"
-    iPhone7Plus_xpath_xpath= "//div[text()='Apple iPhone 7 Plus (Black, 32 GB)']"
+    iPhone7Plus_xpath= "//div[text()='Apple iPhone 7 Plus (Black, 32 GB)']"
