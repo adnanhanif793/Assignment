@@ -4,20 +4,21 @@ import time
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 from Demo_Project.Pages import FlipKartHomePage
-from Demo_Project.Locators import FlipKartLocators
+
 
 class MyTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver=webdriver.Chrome()
-        driver.implicitly_wait(5)
+        cls.driver.implicitly_wait(5)
         cls.driver.get("https://www.flipkart.com")
 
 
     def test_flipkartScenario(self):
         driver=self.driver()
         homepage=FlipKartHomePage(driver)
-        homepage.
+        FlipKartTest=FlipKartHomePage(driver)
+
 
         driver.find_element_by_xpath("//span[text()='Enter Email/Mobile number']/ancestor::div/button").click()
         menu=driver.find_element_by_xpath("//span[contains(text(),'Electronics')]")
